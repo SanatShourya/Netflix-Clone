@@ -56,6 +56,7 @@ export default async function Home() {
           <Row title="Scary Movies" movies={movies.horrorMovies} />
           <Row title="Romance Movies" movies={movies.romanceMovies} />
           <Row title="Documentaries" movies={movies.documentaries} />
+          as
         </section>
       </main>
     </div>
