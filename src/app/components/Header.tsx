@@ -1,7 +1,6 @@
 "use client";
 
 import { BellIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
-import { setServers } from "dns";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -58,6 +57,8 @@ function Header() {
             src="https://rb.gy/g1pwyx"
             alt=""
             className="cursor-pointer rounded"
+            width={25}
+            height={25}
           />
         </Link>
       </div>

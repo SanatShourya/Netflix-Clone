@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { Movie } from "./typings";
 import Header from "./components/Header";
 import React from "react";
 import Banner from "./components/Banner";
