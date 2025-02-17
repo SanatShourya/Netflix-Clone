@@ -4,6 +4,12 @@
 
 
 @layer base {
+
+  html {
+    @apply scrollbar-thin scrollbar-track-transparent scrollbar-thumb-red-600;
+  }
+  
+
   body {
     @apply bg-[#141414] text-white;
   }
@@ -21,5 +27,16 @@
 
   .bannerButton {
      @apply flex items-center gap-x-2 rounded px-5 py-1.5 text-sm font-semibold transition hover:opacity-75 md:py-2.5 md:px-8 md:text-xl
+  }
+}
+
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;      /* Firefox */
   }
 }

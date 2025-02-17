@@ -4,6 +4,7 @@ import Banner from "./components/Banner";
 import requests from "./utils/requests";
 import Row from "./components/Row";
 
+
 async function fetchMovies() {
   const [
     netflixOriginals,
@@ -41,7 +42,7 @@ export default async function Home() {
   const movies = await fetchMovies(); // Fetch movies inside the component
 
   return (
-    <div className="relative h-screen bg-gradient-to-b lg:h-[140vh]">
+    <div className="custom-scrollbar relative h-screen bg-gradient-to-b lg:h-[140vh]">
       <Header />
       <main className="relative pl-4 pb-24 lg:space-y-24 lg:pl-16">
         <Banner netflixOriginals={movies.netflixOriginals} />
