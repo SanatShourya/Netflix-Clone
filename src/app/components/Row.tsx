@@ -23,7 +23,6 @@ function Row({ title, movies }: Props) {
 
             rowRef.current.scrollTo({left:scrollTo, behavior: 'smooth'})
         }
-        <h1></h1>
     }
 
     return (
